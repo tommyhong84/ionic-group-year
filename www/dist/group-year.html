@@ -1,0 +1,21 @@
+<div class="list group-year" style="height:100%">
+  <ion-scroll class="contact-scroll" style="height:100%">
+    <ion-list>
+      <div ng-repeat="group in yearGroups| orderBy:'name':'asc'">
+        <ion-item class="item-stable"
+                  ng-click="toggleGroup(group)"
+                  ng-class="{active: isGroupShown(group)}">
+          <i class="icon" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i>
+          &nbsp;
+          Year:{{group.name}}
+        </ion-item>
+        <ion-radio class="item-accordion"
+                  ng-repeat="rp in group.children| orderBy:'id'"
+                  ng-show="isGroupShown(group)">
+          {{rp.name}}
+        </ion-radio>
+      </div>
+    </ion-list>
+
+  </ion-scroll>
+</div>
