@@ -1,7 +1,7 @@
 # ionic-group-year-directive
 
 
-<img src="https://raw.githubusercontent.com/tommyhong84/ionic-group-year-directive/master/screenshot.png" width="320" height="568"/>
+<img src="https://raw.githubusercontent.com/tommyhong84/ionic-group-year/master/screenshot.png" width="320" height="568"/>
 
 # how to use it
 
